@@ -132,5 +132,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczM
     "name": "LG Mobile",
     "category": "Mobile",
     "price": "3200",
-    "description": "this is best in the worlds"
+    "description": "this is best phone in the worlds"
 }
