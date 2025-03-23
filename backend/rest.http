@@ -134,3 +134,40 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczM
     "price": "3200",
     "description": "this is best phone in the worlds"
 }
+
+### create subscription plan
+POST http://localhost:3000/api/subscription
+Content-Type: application/json
+
+{
+    "proId": "67c17c11a37308fbd7d43fd5",
+    "currentPlan": "Pro",
+    "planDurationInDays": 30,
+    "monthlyCost": 20
+}
+
+### update subscription
+PUT http://localhost:3000/api/subscription/67c17c11a37308fbd7d43fd5
+
+Content-Type: application/json
+
+{
+    "currentPlan": "Enterprise",
+    "planDurationInDays": 90,
+    "monthlyCost": 50
+}
+
+### cancel subscription
+PATCH http://localhost:3000/api/subscription/cancel/67c17c11a37308fbd7d43fd5
+
+
+### renew subscription
+PATCH http://localhost:3000/api/subscription/renew/67c17c11a37308fbd7d43fd5
+Content-Type: application/json
+
+{
+  "planDurationInDays": 30
+}
+
+### delete subscription (no controller yet)
+DELETE http://localhost:3000/api/subscription/delete/67c17c11a37308fbd7d43fd5
