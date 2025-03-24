@@ -1,25 +1,25 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDExODg5ODcsImV4cCI6MTc3Mjc0NjU4NywiYXVkIjoiNjdjMTdjMTFhMzczMDhmYmQ3ZDQzZmQ1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.BZGSq7tONHd43nZMoHqpfn7BHai5phQ_8thU5v8uha4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDc4NzEsImV4cCI6MTc0Mjc0NzkzMSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.uAU28Wyxu-RemI1UJzsIBrbJUy1TnmW2JvPmEGa2cZc
 
 ###
 GET http://localhost:3000/home
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDExODg5ODcsImV4cCI6MTc3Mjc0NjU4NywiYXVkIjoiNjdjMTdjMTFhMzczMDhmYmQ3ZDQzZmQ1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.BZGSq7tONHd43nZMoHqpfn7BHai5phQ_8thU5v8uha4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NTEyNTYsImV4cCI6MTc0Mjc1MTQzNiwiYXVkIjoiNjdlMDNlNzA4MzVhYzhjOGY4OGYwOWQzIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.UWnLpUhnjYJhDsaYzID5PuaO51s9IBhfIWhyczr30vo
 
 ###
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "a@a.com",
-    "password": "123456" 
+    "email": "sushanniroula@gmail.com",
+    "password": "aaaaaaaa" 
 }
 ###
 POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "b@b.com",
-    "password": "123456" 
+    "email": "niroulasushan@gmail.com",
+    "password": "aaaaaaaa" 
 }
 
 ###
@@ -27,7 +27,7 @@ POST http://localhost:3000/auth/refresh-token
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDEwMjE4OTUsImV4cCI6MTc3MjU3OTQ5NSwiYXVkIjoiNjdjMTdjMTFhMzczMDhmYmQ3ZDQzZmQ1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.8UlnMnBh9p1adwRi-0DL9PgaQ4bQ8bLknvZDMLJfxtw"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxMTMsImV4cCI6MTc0Mjc0ODIzMywiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.b-lMiQqNNLDwjEjtRb6t38-oKWMZZ0sRVVf3AYlQoqM"
 }
 
 ###
@@ -35,7 +35,7 @@ DELETE  http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDEwMjI5MzAsImV4cCI6MTc3MjU4MDUzMCwiYXVkIjoiNjdjMTdjMTFhMzczMDhmYmQ3ZDQzZmQ1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.kN1SJakxPiDwZ2Ppfrf5SniVrnTEh1F1tYfUW9ZbGUI"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NTEwMjgsImV4cCI6MTc0Mjc1MTIwOCwiYXVkIjoiNjdlMDNlNzA4MzVhYzhjOGY4OGYwOWQzIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.YVROCJi0Wsj0A7YxpxtE8X2SyrvZ8I8Of_-PokkR5Z4"
 }
 
 // customer routes
@@ -43,10 +43,9 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/api/customer
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NTEwMjgsImV4cCI6MTc0Mjc1MTIwOCwiYXVkIjoiNjdlMDNlNzA4MzVhYzhjOGY4OGYwOWQzIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.YVROCJi0Wsj0A7YxpxtE8X2SyrvZ8I8Of_-PokkR5Z4
 
 {
-    "proId": "67c17c11a37308fbd7d43fd5",
     "name": "Jack",
     "email": "jack@gmail.com",
     "phone": "+977-6445412545"
@@ -87,13 +86,12 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
 
 {
-    "proId": "67c17c11a37308fbd7d43fd5",
-    "productId": "67c17d08a37308fbd7d43ff6",
+    "productId": "67d45826f77c570ab2fce0c0",
     "customerDetails": {
         "id": "67c17c49a37308fbd7d43fdb",
-        "name": "gita",
+        "name": "Sushan",
         "phone": "+977-9845215451",
-        "email": "mausam@mail.com"
+        "email": "sushan@mail.com"
     }
 }
 
@@ -103,21 +101,19 @@ GET http://localhost:3000/api/order/all
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
 
-{
-    "proId": "67c17c11a37308fbd7d43fd5"
-}
-###
-post http://localhost:3000/api/product
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
 
-{
-    "proId": "67cb98faefd5ba8318b8987a",
-    "name": "LG Mobile",
-    "category": "Mobile",
-    "price": "3200",
-    "description": "this tv is best in the world"
-}
+
+# ###
+# POST http://localhost:3000/api/order
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
+
+# {
+#     "proId": "67bfffe73a1847fa5f30dd9e",
+#     "name": "iphone",
+#     "category": "smartphone",
+
+# }
 
 
 
@@ -128,16 +124,191 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
 
 {
-    "proId": "67c17c7fa37308fbd7d43fe4",
-    "name": "LG Mobile",
-    "category": "Mobile",
+    "proId": "67c17c11a37308fbd7d43fe5",
+    "name": "LG",
+    "category": "smartphone",
     "price": "3200",
-    "description": "this is best phone in the worlds"
+    "description": "this tv is best in the world"
 }
+
+###
+delete http://localhost:3000/api/product/67c17c11a37308fbd7d43fd5/67c17d08a37308fbd7d43ff6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+### 
+get http://localhost:3000/api/product/all/67c17c12a37308fbd7d43fd5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+###
+put http://localhost:3000/api/product
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDA2MzczMzQsImV4cCI6MTc3MjE5NDkzNCwiYXVkIjoiNjdiZmZmZTczYTE4NDdmYTVmMzBkZDllIiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.gyMa49yrGmjDvKt0VKyfew5pLYN005y-dEElCcUPfO8
+
+{
+    "proId": "67c17c7fa37308fbd7d43fe4",
+    "productId": "67c17d28a37308fbd7d43ff8",
+    "name": "sushan name",
+    "category": "sushan cat",
+    "price": 500,
+    "description": "sushan des",
+    "addedAt": "2025-03-13T12:00:00.000Z"
+}
+
+
+### create cohort
+POST http://localhost:3000/api/cohort
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "proId": "67c17c7fa37308fbd7d43fe4",
+    "name": "Loyal",
+    "criteria": "More than 6 orders"
+}
+
+### get all cohort
+GET http://localhost:3000/api/cohort/67c17c7fa37308fbd7d43fe4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
+### view cohort detail
+GET http://localhost:3000/api/cohort/67c17c7fa37308fbd7d43fe4/67d45d6105187bb12eb20a4f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
+### update cohort
+PUT http://localhost:3000/api/cohort/67c17c7fa37308fbd7d43fe4/67d45d6105187bb12eb20a4f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "name": "High-Valued Customers",
+    "criteria": "Spent > $1000"
+}
+
+### delete cohort
+DELETE http://localhost:3000/api/cohort/67c17c7fa37308fbd7d43fe4/67d45d6105187bb12eb20a4f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
+### add data of dashboard
+POST http://localhost:3000/api/dashboard
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "proId": "67c17c7fa37308fbd7d43fe4",
+    "customerSatisfaction": 85,
+    "retentionRate": 78.5,
+    "churnRate": 21.5,
+    "recentActivities": [
+        "Purchased premium subscription",
+        "Contacted support",
+        "Left a positive review"
+    ],
+    "chartData": [
+        {
+            "line": {
+                "title": "Customer Growth Over Time",
+                "xAxis": ["Jan", "Feb", "Mar", "Apr", "May"],
+                "yAxis": [10, 25, 40, 55, 70]
+            },
+            "pi": {
+                "title": "Customer Distribution",
+                "labels": ["New", "Returning", "Churned"],
+                "values": [50, 30, 20]
+            },
+            "bar": {
+                "title": "Revenue by Month",
+                "xAxis": ["Jan", "Feb", "Mar", "Apr", "May"],
+                "yAxis": [5000, 7000, 8000, 9500, 11000]
+            }
+        }
+    ]
+}
+
+
+### get data for dashboard
+get http://localhost:3000/api/dashboard/67c17c7fa37308fbd7d43fe4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
+
+### updata dashboard data
+PUT http://localhost:3000/api/dashboard/67c17c7fa37308fbd7d43fe4/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "customerSatisfaction": 85,
+    "retentionRate": 78.5,
+    "churnRate": 2121212.5,
+    "recentActivities": [
+        "Purchased premium subscription",
+        "Contacted support",
+        "Left a negative review",
+        "Purchased premium subscription"
+    ],
+    "chartData": [
+        {
+            "line": {
+                "title": "Customer Growth Over Time",
+                "xAxis": ["Jan", "Feb", "Mar", "Apr", "May"],
+                "yAxis": [10, 25, 40, 55, 70]
+            },
+            "pi": {
+                "title": "Customer Distribution",
+                "labels": ["New", "Returning", "Churned"],
+                "values": [50, 30, 20]
+            },
+            "bar": {
+                "title": "Revenue by Month",
+                "xAxis": ["Jan", "Feb", "Mar", "Apr", "May"],
+                "yAxis": [5000, 7000, 8000, 9500, 11000]
+            }
+        }
+    ]
+}
+
+
+### interaction create
+post http://localhost:3000/api/interaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "proId": "67c17c11a37308fbd7d43fd5",
+    "customerName": "Mahesh",
+    "type": "Email",
+    "notes": "Followed up on order status"
+}
+
+### interaction view
+GET http://localhost:3000/api/interaction/67c17c11a37308fbd7d43fd5/67d7bd474aec06577a270177
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
+### interaction upadate
+PUT http://localhost:3000/api/interaction/67c17c11a37308fbd7d43fd5/67d7bd474aec06577a270177
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+{
+    "customerName": "Sushan",
+    "type": "Chat",
+    "notes": "Followed up on order status"
+}
+
+### interaction delete
+DELETE http://localhost:3000/api/interaction/67c17c11a37308fbd7d43fd5/67d7bd474aec06577a270177
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
+
+
 
 ### create subscription plan
 POST http://localhost:3000/api/subscription
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
 
 {
     "proId": "67c17c11a37308fbd7d43fd5",
@@ -148,8 +319,8 @@ Content-Type: application/json
 
 ### update subscription
 PUT http://localhost:3000/api/subscription/67c17c11a37308fbd7d43fd5
-
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
 
 {
     "currentPlan": "Enterprise",
@@ -159,15 +330,19 @@ Content-Type: application/json
 
 ### cancel subscription
 PATCH http://localhost:3000/api/subscription/cancel/67c17c11a37308fbd7d43fd5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
 
 
 ### renew subscription
 PATCH http://localhost:3000/api/subscription/renew/67c17c11a37308fbd7d43fd5
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
 
 {
   "planDurationInDays": 30
 }
 
+
 ### delete subscription (no controller yet)
 DELETE http://localhost:3000/api/subscription/delete/67c17c11a37308fbd7d43fd5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3NDgxOTksImV4cCI6MTc0Mjc0ODI1OSwiYXVkIjoiNjdkZDdlYTVmMTcxN2MwMmNkNGJmM2M1IiwiaXNzIjoiZG9tYWludXJsLmNvbSJ9.bddFcCWWvgWikBiYhBtiahVjupXByXq3mLW4yWHKV-I
